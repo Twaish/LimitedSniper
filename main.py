@@ -255,7 +255,7 @@ def second():
 				except Exception as e:
 					print(e)
 				
-				#web.open(f"https://www.roblox.com/catalog/{id}")
+				web.open(f"https://www.roblox.com/catalog/{id}")
 			elif name != history1[0]:
 				print(msg("i", f"{name} [Skipping - {price} RBX]"))
 
@@ -265,7 +265,7 @@ def second():
 		except Exception as e:
 			print("MAIN CODE THREAD ERROR:")
 			print(e)
-Thread(target=second).start()
+#Thread(target=second).start()
 
 
 while True:
@@ -296,7 +296,7 @@ while True:
 			except Exception as e:
 				print(e)
 			
-			#web.open(f"https://www.roblox.com/catalog/{id}")
+			web.open(f"https://www.roblox.com/catalog/{id}")
 		elif name != history[0]:
 			print(msg("i", f"{name} [Skipping - {price} RBX]"))
 
